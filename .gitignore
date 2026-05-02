@@ -1,0 +1,42 @@
+# macOS
+.DS_Store
+
+# Virtual environment
+.venv/
+__pycache__/
+scripts/__pycache__/
+
+# Local raw datasets
+data/df95/
+
+# Precomputed training arrays (large; regenerate with scripts/build_memmap.py)
+processed/memmap/*.npy
+processed/memmap/
+processed/df95_metadata.csv
+processed/df95_debug_packets.csv
+processed/wtfpad_paired.csv
+
+# Local bulk downloads (e.g. ~100GB AWF_Large_CW)
+downloads/*.tar.gz
+downloads/*.zip
+# Extracted AWF large closed-world tree (huge; optional local copy)
+data/awf_large_cw/
+# WTF-PAD original + protected (regenerate: unzip from downloads/ — see downloads/README.md)
+data/wtfpad/
+# WTF-PAD 100-class training checkpoints
+results/wtfpad/*.pt
+results/wtfpad/*.csv
+results/wtfpad/*.json
+results/df_ccs2018/checkpoints/
+results/checkpoints/
+# Can be very large; regenerate with scripts/make_awf_large_metadata.py
+processed/awf_large_cw_metadata.csv
+processed/awf_large_cw_metadata_debug_packets.csv
+
+# Course and write-up materials
+course papers/
+paper/
+proposal/
+references/
+memo.md
+PES Final Project Rubric 2026.pdf

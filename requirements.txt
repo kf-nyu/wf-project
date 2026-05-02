@@ -1,0 +1,3 @@
+# ML stack for wf-project (use project venv: python -m venv .venv && .venv/bin/pip install -r requirements.txt)
+numpy
+torch
