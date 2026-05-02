@@ -9,12 +9,8 @@ scripts/__pycache__/
 # Local raw datasets
 data/df95/
 
-# Precomputed training arrays (large; regenerate with scripts/build_memmap.py)
-processed/memmap/*.npy
-processed/memmap/
-processed/df95_metadata.csv
-processed/df95_debug_packets.csv
-processed/wtfpad_paired.csv
+# Regenerated metadata and memmaps (see scripts/make_* , build_memmap.py); do not commit
+processed/
 
 # Local bulk downloads (e.g. ~100GB AWF_Large_CW)
 downloads/*.tar.gz
@@ -29,9 +25,6 @@ results/wtfpad/*.csv
 results/wtfpad/*.json
 results/df_ccs2018/checkpoints/
 results/checkpoints/
-# Can be very large; regenerate with scripts/make_awf_large_metadata.py
-processed/awf_large_cw_metadata.csv
-processed/awf_large_cw_metadata_debug_packets.csv
 
 # Course and write-up materials
 course papers/
